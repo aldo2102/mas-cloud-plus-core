@@ -10,7 +10,7 @@ To contribute or modify MAS-Cloud+, follow these steps to set up your developmen
 
 - **Java Development Kit (JDK):** Ensure you have JDK 1.8 or newer installed on your system.
 - **Java IDE:** Choose your preferred Java Integrated Development Environment (IDE) such as Eclipse IDE, NetBeans, or IntelliJ IDEA.
-- **Drools Dependencies:**
+- **Dependencies:**
   - Install Drools JBoss 6.5.0-final, a powerful business rules management system.
   - Install Drools Jade, a JAVA Agent DEvelopment Framework.
   - Install openCSV, a Java library for reading and writing CSV files.
