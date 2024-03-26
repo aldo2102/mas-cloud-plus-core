@@ -1,42 +1,55 @@
 # MAS-Cloud+
 
-A Multi-agent Architecture for Optimized Cloud Resource Management
+## Overview
 
-The project aims at managing virtual machines in cloud providers.
+MAS-Cloud+ is a comprehensive solution for managing virtual machines (VMs) efficiently in various cloud providers. It utilizes multi-agent architecture for optimized resource allocation and management.
 
-## Tools used for development:
+## Development Environment Setup
 
-- **Java Development Kit (JDK)** 1.8 or newer
-- Java IDE (Eclipse IDE, NetBeans, or IntelliJ IDEA)
-- **Vagrant** by HashiCorp - open-source software for creating and maintaining portable virtual development environments
-- **Drools JBoss** - Drools is a business rules management system with a rules engine based on chaining inference
-- **Drools Jade** - JAVA Agent DEvelopment Framework
-- **openCSV** - A Java library for reading and writing CSV files
-- **Python** - required for running OR-Tools
-- **OR-Tools** - an open-source software suite for optimization
+To contribute or modify MAS-Cloud+, follow these steps to set up your development environment:
 
-## Usage Steps:
+- **Java Development Kit (JDK):** Ensure you have JDK 1.8 or newer installed on your system.
+- **Java IDE:** Choose your preferred Java Integrated Development Environment (IDE) such as Eclipse IDE, NetBeans, or IntelliJ IDEA.
+- **Drools Dependencies:**
+  - Install Drools JBoss 6.5.0-final, a powerful business rules management system.
+  - Install Drools Jade, a JAVA Agent DEvelopment Framework.
+  - Install openCSV, a Java library for reading and writing CSV files.
 
-1. **Setting up Development Environment:**
-   - Use a Java IDE of your choice.
-   - Install dependencies:
-     - Drools JBoss 6.5.0-final
-     - Drools Jade - JAVA Agent DEvelopment Framework
-     - openCSV
-   - Make sure JDK 1.8 or newer is installed on your system.
+## Execution Environment Setup (Local and Cloud)
 
-2. **Setting up Execution Environment (Local and Cloud):**
-   - Install Vagrant on your local machine.
-   - After installing Vagrant, install the plugins that connect to cloud providers:
-     - AWS: [vagrant-aws](https://github.com/mitchellh/vagrant-aws)
-     - Google Cloud: [vagrant-google](https://github.com/mitchellh/vagrant-google)
-     - Azure: [vagrant-azure](https://github.com/Azure/vagrant-azure)
-   - Configure VM options in the `src/Starter/Starter.java` file as needed, along with access keys to the chosen provider.
+MAS-Cloud+ supports both local and cloud execution environments. Follow these steps to set up your execution environment:
 
-3. **Setting up Execution Environment (Local):**
-   - Install Python on your local machine.
-   - Install OR-Tools, a Python library for optimization.
+- **Vagrant Setup:**
+  - Install Vagrant, an open-source software for managing virtual environments.
+  - Install the necessary Vagrant plugins for connecting to your preferred cloud provider:
+    - AWS: [vagrant-aws](https://github.com/mitchellh/vagrant-aws)
+    - Google Cloud: [vagrant-google](https://github.com/mitchellh/vagrant-google)
+    - Azure: [vagrant-azure](https://github.com/Azure/vagrant-azure)
+- **Configuration:**
+  - Customize VM configurations in the `src/Starter/Starter.java` file according to your requirements.
+  - Provide access keys and credentials for the chosen cloud provider.
 
-4. **Configuring Virtual Machines in the Cloud:**
-   - On each virtual machine created in the cloud, it is necessary to install `dstat` for monitoring.
+## Local Execution Environment Setup
+
+For local execution, follow these additional steps:
+
+- **Python Installation:**
+  - Install Python on your local machine.
+- **OR-Tools Setup:**
+  - Install OR-Tools, an open-source optimization suite, using Python.
+
+## Cloud VM Configuration
+
+When provisioning virtual machines in the cloud, ensure the following steps are performed:
+
+- **dstat Installation:**
+  - Install dstat on each virtual machine to monitor system resource usage effectively.
+
+## Additional Dependencies
+
+- **dstat:** A powerful, flexible, and versatile utility for generating Linux system resource statistics, serving as a replacement for all the tools mentioned above.
+
+## Contribution
+
+Contributions to MAS-Cloud+ are welcome! Feel free to fork the repository, make your changes, and submit a pull request.
 
